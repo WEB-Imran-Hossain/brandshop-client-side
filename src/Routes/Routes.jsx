@@ -48,28 +48,27 @@ const router = createBrowserRouter([
         element: <PrivateRoutes><BrandProduct></BrandProduct></PrivateRoutes>,
       },
       {
-        path: "/loreal",
-        element: <LorealBrand></LorealBrand>,
-        loader: () => fetch("brand.json")
+        path: "/loreal/:id",
+        element: <LorealBrand></LorealBrand>
       },
       {
-        path: "/estee_lauder",
+        path: "/estee_lauder/:id",
         element: <EsteeLauderBrand></EsteeLauderBrand>
       },
       {
-        path: "/chanel",
+        path: "/chanel/:id",
         element: <ChanelBrand></ChanelBrand>
       },
       {
-        path: "/revlon",
+        path: "/revlon/:id",
         element: <DiorBrand></DiorBrand>
       },
       {
-        path: "/dior",
+        path: "/dior/:id",
         element: <RevlonBrand></RevlonBrand>
       },
       {
-        path: "/avon",
+        path: "/avon/:id",
         element: <AvonBrand></AvonBrand>
       }
     ],
