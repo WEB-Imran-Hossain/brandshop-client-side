@@ -10,13 +10,13 @@ const Header = () => {
             <li className="mr-5 text-sm font-bold"><NavLink to="/">Home</NavLink></li>
             <li className="mr-5 text-sm font-bold"><NavLink to="/addProduct"> Add Product</NavLink></li>
             <li className="mr-5 text-sm font-bold"><NavLink to="/mycart">My Cart</NavLink></li>
-            <li className="mr-5 text-sm font-bold"><NavLink to="/login">Login</NavLink></li>
+            <li className="mr-5 text-sm font-bold"><NavLink to={"/login"}>Login</NavLink></li>
         </>
 
 
     return (
 
-        <div className="navbar bg-white sticky top-0 lg:px-40">
+        <div className="navbar bg-white sticky top-0 lg:px-40 z-50">
             <div className="navbar">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -35,9 +35,11 @@ const Header = () => {
             </div>
             <div className="navbar-end mr-5 md:mr-0">
                 <div>
-                    <button>
+                   <Link to="/login">
+                   <button>
                         <BiUser className="h-8 w-8"></BiUser>
                     </button>
+                   </Link>
                 </div>
                 <div>
                     <button>
