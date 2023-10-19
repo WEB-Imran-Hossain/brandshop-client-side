@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         loader: () => fetch("brand.json")
       },
       {
-        path: "/addProduct",
+        path: "/addproduct",
         element: <PrivateRoutes><AddProduct></AddProduct></PrivateRoutes>
       },
       {
