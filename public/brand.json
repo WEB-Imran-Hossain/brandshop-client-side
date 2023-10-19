@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/1rYqhFc/Lash-Paradise-Washable-Mascara2.jpg",
+    "brand": "L'Oréal",
+    "pathUrl": "/loreal"
+    },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/TwC1hyv/1366x1366.jpg",
+    "brand": "Estée Lauder",
+    "pathUrl": "/estee_lauder"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/dbJcxsn/1366x1366.jpg",
+    "brand": "Chanel",
+    "pathUrl": "/chanel"
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/m5YcV74/Hair.jpg",
+    "brand": "Revlon",
+    "pathUrl": "/revlon"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/wg9mhcG/1366x1366.jpg",
+    "brand": "Dior",
+    "pathUrl": "/dior"
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/YDC954F/1366x1366.jpg",
+    "brand": "Avon",
+    "pathUrl": "/avon"
+  }
+]
