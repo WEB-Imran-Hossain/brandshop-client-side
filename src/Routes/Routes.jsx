@@ -61,11 +61,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/revlon/:id",
-        element: <DiorBrand></DiorBrand>
+        element: <RevlonBrand></RevlonBrand>
       },
       {
         path: "/dior/:id",
-        element: <RevlonBrand></RevlonBrand>
+        element: <DiorBrand></DiorBrand>
       },
       {
         path: "/avon/:id",

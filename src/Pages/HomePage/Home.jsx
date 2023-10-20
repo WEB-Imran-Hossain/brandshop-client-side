@@ -56,7 +56,7 @@ const Home = () => {
                 ))}
             </div>
             {/* discover section */}
-            <div className="hero bg-base-200 py-20">
+            <div className="hero bg-base-200 mb-20">
                 <div className="hero-content md:flex flex-col text-center lg:flex-row lg:justify-between lg:text-left">
                     <div>
                         <p className="text-lg font-medium">New Collection</p>
@@ -73,8 +73,8 @@ const Home = () => {
                             Explore More
                         </button>
                     </div>
-                    <div>
-                        <img src="../../../public/image/other-section.png" alt="" />
+                    <div >
+                        <img className="-mb-4" src="../../../public/image/other-section.png" alt="" />
                     </div>
                 </div>
             </div>
