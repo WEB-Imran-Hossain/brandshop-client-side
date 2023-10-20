@@ -1,9 +1,15 @@
-import { Link } from "react-router-dom";
 
-
-const ProductCard = ({ product }) => {
+const SingleCart = ({ product }) => {
     const { _id, name, image, price, rating, description, brand, category } = product;
-
+    const haldleButtonDelete = (_id) => {
+        fetch(`http://localhost:5000/cart/${_id}`,{
+            method: 'DELETE',
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+            })
+    }
 
     return (
         <div className="card bg-base-100 shadow-xl">
@@ -24,18 +30,13 @@ const ProductCard = ({ product }) => {
                 <p>{description}</p>
                 <p>{rating}</p>
                 <p>$ {price}</p>
-                <Link to={`/product/${_id}`}>
-                    <button className="btn bg-[#4e7661] w-40 h-6 text-white text-sm font-semibold border-transparent hover:bg-[#FFF] hover:border-transparent hover:bg-black hover:font-semibold rounded-sm">
-                        View Details
-                    </button></Link>
-
-                <Link to={`/update/${_id}`}>
-                    <button className="btn bg-[#4e7661] w-40 h-6 text-white text-sm font-semibold border-transparent hover:bg-[#FFF] hover:border-transparent hover:bg-black hover:font-semibold rounded-sm">
-                        Update
-                    </button></Link>
+               
+                    <button onClick={() => haldleButtonDelete(_id)} className="btn bg-[#4e7661] w-40 h-6 text-white text-sm font-semibold border-transparent hover:bg-[#FFF] hover:border-transparent hover:bg-black hover:font-semibold rounded-sm">
+                        Delete
+                    </button>
             </div>
         </div>
     );
 };
 
-export default ProductCard;
+export default SingleCart;

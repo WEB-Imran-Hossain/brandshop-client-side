@@ -1,4 +1,9 @@
+import { useLoaderData } from "react-router-dom";
+import ProductCard from "../ProductCardPage/ProductCard";
+
 const RevlonBrand = () => {
+    const product = useLoaderData();
+    console.log(product);
     return (
         <div className="w-[80vw] mx-auto">
             <div className="carousel w-full h-screen mt-20">
@@ -30,10 +35,14 @@ const RevlonBrand = () => {
                     Our Featured <span className="text-[#4E7661]">Products</span>
                 </h2>
                 <p className="text-lg font-normal mb-20 text-center">
-                <strong>Revlon</strong> is a globally renowned brand in the beauty and cosmetics industry, known for its commitment to innovation, quality, and a broad range of products that empower individuals to express their unique beauty. Here's a feature description of Revlon:
+                    <strong>Revlon</strong> is a globally renowned brand in the beauty and cosmetics industry, known for its commitment to innovation, quality, and a broad range of products that empower individuals to express their unique beauty. Here's a feature description of Revlon:
                 </p>
             </div>
-
+            <div className="grid md:grid-cols-2 gap-4">
+                {
+                    product.map(product => <ProductCard key={product._id} product={product}></ProductCard>)
+                }
+            </div>
         </div>
     );
 };

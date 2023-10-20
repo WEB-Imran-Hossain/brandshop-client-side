@@ -1,6 +1,9 @@
+import { useLoaderData } from "react-router-dom";
+import ProductCard from "../ProductCardPage/ProductCard";
 
 const LorealBrand = () => {
-
+    const product = useLoaderData();
+    console.log(product);
     return (
         <div className="w-[80vw] mx-auto">
             <div className="carousel w-full h-screen mt-20">
@@ -32,9 +35,13 @@ const LorealBrand = () => {
                     Our Featured <span className="text-[#4E7661]">Products</span>
                 </h2>
                 <p className="text-lg font-normal mb-20 text-center">
-                    <strong>L'Oréal</strong> is a well-known and globally recognized cosmetics and beauty company that offers a wide range of products in the beauty and personal care industry. L'Oréal's products are known for their quality, innovation, and diverse range to cater to various beauty needs. Here's a general description of L'Oréal cosmetics and its product categories.</p>
+                    <strong>Loréal</strong> is a well-known and globally recognized cosmetics and beauty company that offers a wide range of products in the beauty and personal care industry. L'Oréal's products are known for their quality, innovation, and diverse range to cater to various beauty needs. Here's a general description of L'Oréal cosmetics and its product categories.</p>
             </div>
-
+            <div className="grid md:grid-cols-2 gap-4">
+                {
+                    product.map(product => <ProductCard key={product._id} product={product}></ProductCard>)
+                }
+            </div>
         </div>
     );
 };

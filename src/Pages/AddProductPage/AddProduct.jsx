@@ -35,12 +35,13 @@ const AddProduct = () => {
         console.log(data);
         if (data.insertedId) {
           Swal.fire({
-              title: 'Success!',
-              text: 'Product Added Successfully',
-              icon: 'success',
-              confirmButtonText: 'Cool'
+            title: 'Success!',
+            text: 'Product Added Successfully',
+            icon: 'success',
+            confirmButtonText: 'Cool'
           })
-      }
+        }
+        event.target.reset();
       });
   };
 
@@ -85,7 +86,7 @@ const AddProduct = () => {
               </div>
             </div>
 
-       
+
 
             <div className="md:flex mb-5 gap-2">
               <div className="form-control md:w-1/2">

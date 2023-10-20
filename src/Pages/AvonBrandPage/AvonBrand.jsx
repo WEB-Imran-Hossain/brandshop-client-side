@@ -4,6 +4,7 @@ import ProductCard from "../ProductCardPage/ProductCard";
 
 const AvonBrand = () => {
     const product = useLoaderData();
+    console.log(product);
 
     return (
         <div className="w-[80vw] mx-auto">
@@ -39,9 +40,11 @@ const AvonBrand = () => {
                     <strong>Avon</strong> is an internationally recognized beauty and cosmetics brand that has been in operation for over a century. Founded in 1886 by David H. McConnell, Avon is known for its extensive line of cosmetics, skincare, fragrances, and personal care products. Here is an overview of Avon's cosmetics and brand identity.
                 </p>
 
-                {
+               <div className="grid md:grid-cols-2 gap-4">
+               {
                     product.map(product=><ProductCard key={product._id} product={product}></ProductCard>)
                 }
+               </div>
             </div>
 
         </div>
