@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import BrandCard from "../BrandCardPage/BrandCard";
 import { useEffect, useState } from "react";
 import About from "../AboutPage/About";
+import Store from "../StorePage/Store";
 
 const Home = () => {
     const brandCardData = useLoaderData();
@@ -58,6 +59,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
+            <Store></Store>
         </div>
     );
 };

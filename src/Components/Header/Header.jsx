@@ -60,7 +60,7 @@ const Header = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2  w-52"
+            className="menu menu-md dropdown-content mt-3 z-[1] p-2 w-52 bg-white rounded-lg"
           >
             {navLink}
           </ul>
