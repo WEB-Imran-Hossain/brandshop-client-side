@@ -15,6 +15,8 @@ import ChanelBrand from "../Pages/ChanelBrandPage/ChanelBrand";
 import DiorBrand from "../Pages/DiorBrandPage/DiorBrand";
 import RevlonBrand from "../Pages/RevlonBrandPage/RevlonBrand";
 import AvonBrand from "../Pages/AvonBrandPage/AvonBrand";
+import About from "../Pages/AboutPage/About";
+import Store from "../Pages/StorePage/Store";
 
 const router = createBrowserRouter([
   {
@@ -70,6 +72,14 @@ const router = createBrowserRouter([
       {
         path: "/avon/:id",
         element: <AvonBrand></AvonBrand>
+      },
+      {
+        path: "/about",
+        element: <PrivateRoutes><About></About></PrivateRoutes>
+      },
+      {
+        path: "/store",
+        element: <PrivateRoutes><Store></Store></PrivateRoutes>
       }
     ],
   },
