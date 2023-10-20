@@ -3,23 +3,23 @@ const LorealBrand = () => {
 
     return (
         <div className="w-[80vw] mx-auto">
-            <div className="carousel w-full h-screen">
+            <div className="carousel w-full h-screen mt-20">
                 <div id="slide1" className="carousel-item relative w-full">
-                    <img src="https://i.ibb.co/j4LkK3s/Revlon-slider-01.jpg" className="w-full" />
+                    <img src="https://i.ibb.co/Zm1yZmc/Loreal-slider-06.jpg" className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" className="btn btn-circle">❮</a>
                         <a href="#slide2" className="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide2" className="carousel-item relative w-full">
-                    <img src="https://i.ibb.co/xGr943Y/Revlon-slider-02.jpg" className="w-full" />
+                    <img src="https://i.ibb.co/NNKDQfj/Loreal-slider-04.jpg" className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" className="btn btn-circle">❮</a>
                         <a href="#slide3" className="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide3" className="carousel-item relative w-full">
-                    <img src="https://i.ibb.co/5LLrLyg/Revlon-slider-03.jpg" className="w-full" />
+                    <img src="https://i.ibb.co/kJ6QNqS/Loreal-slider-05.jpg" className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" className="btn btn-circle">❮</a>
                         <a href="#slide4" className="btn btn-circle">❯</a>
@@ -32,8 +32,7 @@ const LorealBrand = () => {
                     Our Featured <span className="text-[#4E7661]">Products</span>
                 </h2>
                 <p className="text-lg font-normal mb-20 text-center">
-                    <strong>Revlon</strong> is a globally renowned brand in the beauty and cosmetics industry, known for its commitment to innovation, quality, and a broad range of products that empower individuals to express their unique beauty. Here's a feature description of Revlon:
-                </p>
+                    <strong>L'Oréal</strong> is a well-known and globally recognized cosmetics and beauty company that offers a wide range of products in the beauty and personal care industry. L'Oréal's products are known for their quality, innovation, and diverse range to cater to various beauty needs. Here's a general description of L'Oréal cosmetics and its product categories.</p>
             </div>
 
         </div>
