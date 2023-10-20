@@ -71,7 +71,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/avon/:id",
-        element: <AvonBrand></AvonBrand>
+        element: <AvonBrand></AvonBrand>,
+        loader:()=>fetch('http://localhost:5000/product')
       },
       {
         path: "/about",
