@@ -32,7 +32,7 @@ const DiorBrand = () => {
             </div>
             {/* featured products */}
             <div>
-                <h2 className="text-4xl font-bold uppercase text-center my-4 text-black mt-20">
+                <h2 className="text-7xl font-bold uppercase text-center my-4 text-black mt-20">
                     Our Featured <span className="text-[#4E7661]">Products</span>
                 </h2>
                 <p className="text-lg font-normal mb-20 text-center">

@@ -2,7 +2,7 @@
 const SingleCart = ({ product }) => {
     const { _id, name, image, price, rating, description, brand, category } = product;
     const haldleButtonDelete = (_id) => {
-        fetch(`http://localhost:5000/cart/${_id}`,{
+        fetch(`http://localhost:5000/cart/${_id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())
@@ -30,10 +30,10 @@ const SingleCart = ({ product }) => {
                 <p>{description}</p>
                 <p>{rating}</p>
                 <p>$ {price}</p>
-               
-                    <button onClick={() => haldleButtonDelete(_id)} className="btn bg-[#4e7661] w-40 h-6 text-white text-sm font-semibold border-transparent hover:bg-[#FFF] hover:border-transparent hover:bg-black hover:font-semibold rounded-sm">
-                        Delete
-                    </button>
+
+                <button onClick={() => haldleButtonDelete(_id)} className="btn bg-[#4e7661] w-40 h-6 text-white text-sm font-semibold border-transparent hover:bg-[#FFF] hover:border-transparent hover:bg-black hover:font-semibold rounded-sm">
+                    Delete
+                </button>
             </div>
         </div>
     );

@@ -1,8 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { BiUser } from "react-icons/bi";
 import { BiLogOut } from "react-icons/bi";
-
-import { AiOutlineShoppingCart } from "react-icons/ai";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { useContext } from "react";
 
@@ -109,11 +107,6 @@ const Header = () => {
               </Link>
             </div>
           )}
-        </div>
-        <div className="flex items-center">
-          <button>
-            <AiOutlineShoppingCart className="h-8 w-8"></AiOutlineShoppingCart>
-          </button>
         </div>
       </div>
     </div>
