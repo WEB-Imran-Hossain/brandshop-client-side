@@ -23,7 +23,7 @@ const AddProduct = () => {
     console.log(newProduct);
 
     // send data for server
-    fetch("http://localhost:5000/product", {
+    fetch("https://beauty-shop-server-web-imran-hossain-webimran2021s-projects.vercel.app/product", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

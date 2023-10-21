@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       {
         path: "/mycart",
         element: <PrivateRoutes><MyCart></MyCart></PrivateRoutes>,
-        loader: () => fetch("http://localhost:5000/cart")
+        loader: () => fetch("https://beauty-shop-server-web-imran-hossain-webimran2021s-projects.vercel.app/cart")
       },
       {
         path: "/login",
@@ -49,37 +49,37 @@ const router = createBrowserRouter([
       {
         path: "/product/:id",
         element: <PrivateRoutes><ProductDetails></ProductDetails></PrivateRoutes>,
-        loader: ({ params }) => fetch(`http://localhost:5000/product/${params.id}`)
+        loader: ({ params }) => fetch(`https://beauty-shop-server-web-imran-hossain-webimran2021s-projects.vercel.app/product/${params.id}`)
       },
       {
         path: "/loreal/:id",
         element: <LorealBrand></LorealBrand>,
-        loader: () => fetch('http://localhost:5000/product/loreal')
+        loader: () => fetch('https://beauty-shop-server-web-imran-hossain-webimran2021s-projects.vercel.app/product/loreal')
       },
       {
         path: "/estee_lauder/:id",
         element: <EsteeLauderBrand></EsteeLauderBrand>,
-        loader: () => fetch('http://localhost:5000/product/estee_lauder')
+        loader: () => fetch('https://beauty-shop-server-web-imran-hossain-webimran2021s-projects.vercel.app/product/estee_lauder')
       },
       {
         path: "/chanel/:id",
         element: <ChanelBrand></ChanelBrand>,
-        loader: () => fetch('http://localhost:5000/product/chanel')
+        loader: () => fetch('https://beauty-shop-server-web-imran-hossain-webimran2021s-projects.vercel.app/product/chanel')
       },
       {
         path: "/revlon/:id",
         element: <RevlonBrand></RevlonBrand>,
-        loader: () => fetch('http://localhost:5000/product/revlon')
+        loader: () => fetch('https://beauty-shop-server-web-imran-hossain-webimran2021s-projects.vercel.app/product/revlon')
       },
       {
         path: "/dior/:id",
         element: <DiorBrand></DiorBrand>,
-        loader: () => fetch('http://localhost:5000/product/dior')
+        loader: () => fetch('https://beauty-shop-server-web-imran-hossain-webimran2021s-projects.vercel.app/product/dior')
       },
       {
         path: "/avon/:id",
         element: <AvonBrand></AvonBrand>,
-        loader: () => fetch('http://localhost:5000/product/avon')
+        loader: () => fetch('https://beauty-shop-server-web-imran-hossain-webimran2021s-projects.vercel.app/product/avon')
       },
       {
         path: "/about",
@@ -92,7 +92,7 @@ const router = createBrowserRouter([
       {
         path: "/update/:id",
         element: <PrivateRoutes><Update></Update></PrivateRoutes>,
-        loader: ({ params }) => fetch(`http://localhost:5000/product/${params.id}`)
+        loader: ({ params }) => fetch(`https://beauty-shop-server-web-imran-hossain-webimran2021s-projects.vercel.app/product/${params.id}`)
       }
     ],
   },

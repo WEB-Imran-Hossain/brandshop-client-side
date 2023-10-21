@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 
 const Update = () => {
     const product = useLoaderData();
-    const { _id, name, image, price, rating, description, brand, category} = product;
+    const { _id, name, image, price, rating, description, brand, category } = product;
     const handleUpdateProduct = (event) => {
         event.preventDefault();
         const form = event.target;
@@ -24,7 +24,7 @@ const Update = () => {
             rating,
             description,
         };
-        fetch(`http://localhost:5000/product/${_id}`, {
+        fetch(`https://beauty-shop-server-web-imran-hossain-webimran2021s-projects.vercel.app/product/${_id}`, {
             method: "PUT",
             headers: {
                 "content-type": "application/json",
@@ -34,12 +34,12 @@ const Update = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                if(data.modifiedCount){
+                if (data.modifiedCount) {
                     Swal.fire(
                         'Updated',
                         'Product updated successfully',
                         'success'
-                      )
+                    )
                 }
             })
     }

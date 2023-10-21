@@ -5,7 +5,7 @@ const SingleCart = ({ product, updateProduct, setUpdateProduct }) => {
     const { _id, name, image, price, rating, description, brand, category } = product;
 
     const haldleButtonDelete = (_id) => {
-        fetch(`http://localhost:5000/cart/${_id}`, {
+        fetch(`https://beauty-shop-server-web-imran-hossain-webimran2021s-projects.vercel.app/cart/${_id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

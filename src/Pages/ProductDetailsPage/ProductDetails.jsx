@@ -7,7 +7,7 @@ const ProductDetails = () => {
     const { _id, name, image, price, rating, description, brand, category } = data;
     const cartData = { name, image, price, rating, description, brand, category }
     const handleCartButton = () => {
-        fetch('http://localhost:5000/cart', {
+        fetch('https://beauty-shop-server-web-imran-hossain-webimran2021s-projects.vercel.app/cart', {
             method: "POST",
             headers: {
                 "content-type": "application/json",
