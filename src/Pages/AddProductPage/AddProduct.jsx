@@ -48,8 +48,8 @@ const AddProduct = () => {
   return (
     <div className="hero min-h-screen mt-10 mb-40">
       <div className="hero-content flex-col ">
-        <div className="card flex-shrink-0 max-w-screen-xl shadow-2xl bg-[#F4F3F0]">
-          <form onSubmit={handleAddProduct} className="card-body p-28">
+        <div className="card flex-shrink-0 max-w-[90vw] mx-auto shadow-2xl bg-[#F4F3F0]">
+          <form onSubmit={handleAddProduct} className="card-body md:p-28">
             <div className="text-center">
               <h1 className="text-5xl font-bold">Add New Product</h1>
               <p className="py-6">

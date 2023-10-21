@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import SocialLogin from "../LoginPage/SocialLogin";
 import { toast } from "react-toastify";
 import {
@@ -15,6 +15,8 @@ const Registration = () => {
   const [registerError, setRegisterError] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
+
   const handleRegister = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
@@ -50,6 +52,7 @@ const Registration = () => {
         console.log(result.user);
         setSuccessMessage("User Created Successfully!!");
         toast("User Created Successfully!!");
+
         // update profile
         updateProfile(result.user, {
           displayName: name,
@@ -61,9 +64,12 @@ const Registration = () => {
         // send varification email
         sendEmailVerification(result.user)
           .then(() => {
-            toast("Please check your email and verfy your account!!");
+            // toast("Please check your email and verfy your account!!");
           })
           .catch();
+          if(result.user){
+            navigate("/")
+          }
       })
       .catch((error) => {
         console.error(error);
@@ -161,18 +167,18 @@ const Registration = () => {
               {successMessage && (
                 <p className="text-green-600">{successMessage}</p>
               )}
-             <div>
-               {/* page toggle */}
-               <label className="label-text font-bold">
-                Have an account?{" "}
-                <Link
-                  to="/login"
-                  className="label-text-alt link link-hover text-sm ml-32"
-                >
-                  Please Login
-                </Link>
-              </label>
-             </div>
+              <div>
+                {/* page toggle */}
+                <label className="label-text font-bold">
+                  Have an account?{" "}
+                  <Link
+                    to="/login"
+                    className="label-text-alt link link-hover text-sm ml-32"
+                  >
+                    Please Login
+                  </Link>
+                </label>
+              </div>
               <SocialLogin />
             </div>
           </div>
