@@ -6,3 +6,5 @@
 - Using Registration and the login page and implementing Email and password-based Authentication. Users are able to toggle between Login and Registration view.
 - Each product has two buttons. To update and delete information. Also, if you click on the cart button, you can see it on the cart page. You can also delete it if you want.
 - All data of Beauty Shop project is connected to MongoDB server.
+
+website link: https://jade-khapse-103c61.netlify.app/
