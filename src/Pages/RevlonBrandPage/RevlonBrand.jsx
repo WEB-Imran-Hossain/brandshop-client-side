@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import ProductCard from "../ProductCardPage/ProductCard";
+import ProductNotFound from "../../Components/ProductNotFound/ProductNotFound";
 
 const RevlonBrand = () => {
     const product = useLoaderData();
@@ -38,11 +39,14 @@ const RevlonBrand = () => {
                     <strong>Revlon</strong> is a globally renowned brand in the beauty and cosmetics industry, known for its commitment to innovation, quality, and a broad range of products that empower individuals to express their unique beauty. Here's a feature description of Revlon:
                 </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-4">
-                {
-                    product.map(product => <ProductCard key={product._id} product={product}></ProductCard>)
-                }
-            </div>
+            {
+                product.length ? <div className="grid md:grid-cols-2 gap-4">
+                    {
+                        product.map(product => <ProductCard key={product._id} product={product}></ProductCard>)
+                    }
+                </div> : <ProductNotFound></ProductNotFound>
+            }
+
         </div>
     );
 };

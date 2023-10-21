@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import ProductCard from "../ProductCardPage/ProductCard";
+import ProductNotFound from "../../Components/ProductNotFound/ProductNotFound";
 
 const LorealBrand = () => {
     const product = useLoaderData();
@@ -37,11 +38,13 @@ const LorealBrand = () => {
                 <p className="text-lg font-normal mb-20 text-center">
                     <strong>Loréal</strong> is a well-known and globally recognized cosmetics and beauty company that offers a wide range of products in the beauty and personal care industry. L'Oréal's products are known for their quality, innovation, and diverse range to cater to various beauty needs. Here's a general description of L'Oréal cosmetics and its product categories.</p>
             </div>
-            <div className="grid md:grid-cols-2 gap-4">
-                {
-                    product.map(product => <ProductCard key={product._id} product={product}></ProductCard>)
-                }
-            </div>
+            {
+                product.length ? <div className="grid md:grid-cols-2 gap-4">
+                    {
+                        product.map(product => <ProductCard key={product._id} product={product}></ProductCard>)
+                    }
+                </div> : <ProductNotFound></ProductNotFound>
+            }
         </div>
     );
 };

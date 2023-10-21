@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import ProductCard from "../ProductCardPage/ProductCard";
+import ProductNotFound from "../../Components/ProductNotFound/ProductNotFound";
 
 const EsteeLauderBrand = () => {
     const product = useLoaderData();
@@ -38,11 +39,14 @@ const EsteeLauderBrand = () => {
                     <strong>Estée Lauder</strong> is a renowned American multinational cosmetics and skincare company with a rich history dating back to 1946. The company is named after its founder, Estée Lauder, and has established itself as a global leader in the beauty and cosmetics industry. Here's an overview of Estée Lauder and its product offerings.
                 </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-4">
-                {
-                    product.map(product => <ProductCard key={product._id} product={product}></ProductCard>)
-                }
-            </div>
+            {
+                product.length ? <div className="grid md:grid-cols-2 gap-4">
+                    {
+                        product.map(product => <ProductCard key={product._id} product={product}></ProductCard>)
+                    }
+                </div> : <ProductNotFound></ProductNotFound>
+            }
+
         </div>
     );
 };

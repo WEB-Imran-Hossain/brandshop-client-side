@@ -1,10 +1,11 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import ProductCard from '../ProductCardPage/ProductCard';
+import ProductNotFound from '../../Components/ProductNotFound/ProductNotFound';
 
 const DiorBrand = () => {
     const product = useLoaderData();
-    console.log(product);
+    console.log(product, "dior");
     return (
         <div className="w-[80vw] mx-auto">
             <div className="carousel w-full h-screen mt-20">
@@ -39,11 +40,14 @@ const DiorBrand = () => {
                     <strong>Dior</strong> commonly known as Dior, is a prestigious French luxury fashion and beauty brand that has been synonymous with sophistication, elegance, and innovation for over seven decades. Dior's cosmetic offerings are highly regarded for their quality, creativity, and luxurious presentation. Here's an overview of Dior's cosmetics and brand identity.
                 </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-4">
-                {
-                    product.map(product => <ProductCard key={product._id} product={product}></ProductCard>)
-                }
-            </div>
+
+            {
+                product.length ? <div className="grid md:grid-cols-2 gap-4">
+                    {
+                        product.map(product => <ProductCard key={product._id} product={product}></ProductCard>)
+                    }
+                </div> : <ProductNotFound></ProductNotFound>
+            }
         </div>
     );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import ProductCard from '../ProductCardPage/ProductCard';
+import ProductNotFound from '../../Components/ProductNotFound/ProductNotFound';
 
 const ChanelBrand = () => {
     const product = useLoaderData();
@@ -39,11 +40,14 @@ const ChanelBrand = () => {
                     <strong>Chanel </strong> is a world-renowned French luxury fashion and beauty brand with a rich history dating back to the early 20th century. It has become synonymous with elegance, sophistication, and timeless beauty. Here is an overview of Chanel's cosmetic offerings and its brand identity.
                 </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-4">
-                {
-                    product.map(product => <ProductCard key={product._id} product={product}></ProductCard>)
-                }
-            </div>
+            {
+                product.length ? <div className="grid md:grid-cols-2 gap-4">
+                    {
+                        product.map(product => <ProductCard key={product._id} product={product}></ProductCard>)
+                    }
+                </div> : <ProductNotFound></ProductNotFound>
+            }
+
         </div>
     );
 };

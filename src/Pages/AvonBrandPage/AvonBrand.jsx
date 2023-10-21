@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import ProductCard from "../ProductCardPage/ProductCard";
+import ProductNotFound from "../../Components/ProductNotFound/ProductNotFound";
 
 
 const AvonBrand = () => {
@@ -40,11 +41,14 @@ const AvonBrand = () => {
                     <strong>Avon</strong> is an internationally recognized beauty and cosmetics brand that has been in operation for over a century. Founded in 1886 by David H. McConnell, Avon is known for its extensive line of cosmetics, skincare, fragrances, and personal care products. Here is an overview of Avon's cosmetics and brand identity.
                 </p>
 
-               <div className="grid md:grid-cols-2 gap-4">
-               {
-                    product.map(product=><ProductCard key={product._id} product={product}></ProductCard>)
+                {
+                    product.length ? <div className="grid md:grid-cols-2 gap-4">
+                        {
+                            product.map(product => <ProductCard key={product._id} product={product}></ProductCard>)
+                        }
+                    </div> : <ProductNotFound></ProductNotFound>
                 }
-               </div>
+
             </div>
 
         </div>
