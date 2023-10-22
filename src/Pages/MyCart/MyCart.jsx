@@ -9,7 +9,7 @@ const MyCart = () => {
     console.log(product);
 
     return (
-        <div className="grid md:grid-cols-2 gap-4 my-20 w-[80vw] mx-auto">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-4 my-20 w-[80vw] mx-auto">
             {
                 updateProduct.map(product => <SingleCart key={product.id} product={product} updateProduct={updateProduct} setUpdateProduct={setUpdateProduct}></SingleCart>)
             }

@@ -7,7 +7,7 @@ const DiorBrand = () => {
     const product = useLoaderData();
     console.log(product, "dior");
     return (
-        <div className="w-[80vw] mx-auto">
+        <div className="md:max-w-[80vw] md:mx-auto">
             <div className="carousel w-full h-screen mt-20">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src="https://i.ibb.co/t8V3B4h/Dior-slider-16.jpg" className="w-full" />
@@ -42,7 +42,7 @@ const DiorBrand = () => {
             </div>
 
             {
-                product.length ? <div className="grid md:grid-cols-2 gap-4">
+                product.length ? <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-4">
                     {
                         product.map(product => <ProductCard key={product._id} product={product}></ProductCard>)
                     }

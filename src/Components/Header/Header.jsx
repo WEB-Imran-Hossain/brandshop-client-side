@@ -30,7 +30,7 @@ const Header = () => {
         <NavLink to={"/login"}>Login</NavLink>
       </li>
       {/* dark mode */}
-      <span className="mt-4"><button className="text-sm font-bold xl:ml-5" onClick={() => setDarkMode(!darkMode)}>{darkMode ? <MdLightMode className="text-2xl"></MdLightMode> : <MdNightlight className="text-2xl"></MdNightlight>}</button></span>
+      <span className="xl:mt-4 2xl:mt-0"><button className="text-sm font-bold xl:ml-5" onClick={() => setDarkMode(!darkMode)}>{darkMode ? <MdLightMode className="text-2xl"></MdLightMode> : <MdNightlight className="text-2xl"></MdNightlight>}</button></span>
     </>
   );
 

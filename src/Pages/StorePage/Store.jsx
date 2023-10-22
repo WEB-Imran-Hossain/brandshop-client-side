@@ -9,7 +9,7 @@ const Store = () => {
                 <div>
                     <img className="w-[45rem] p-5" src="https://i.ibb.co/0DBnSLW/USA-Store.jpg" alt="" />
                 </div>
-                <div className="lg:w-[30rem] p-10 md:p-10 lg:p-0">
+                <div className="lg:w-[30rem] p-10 md:p-10 lg:p-0 text-black dark:text-white">
                     <h2 className="text-7xl font-bold uppercase">Find a <span className="text-[#4E7661]">Store</span></h2>
                     <p className="mt-10">Physical store or online, cosmetic brand product stores aim to provide customers with a wide selection of beauty and skincare products, a tailored shopping experience, and access to the latest trends and innovations in the <strong>beauty</strong> industry.</p>
                     <div className="mt-5">
@@ -44,7 +44,7 @@ const Store = () => {
                 <div>
                     <img className="w-[45rem] p-5" src="https://i.ibb.co/4JKwGzZ/Calfornia-store.jpg" alt="" />
                 </div>
-                <div className="lg:w-[30rem] p-10 md:p-10 lg:p-0">
+                <div className="lg:w-[30rem] p-10 md:p-10 lg:p-0 text-black dark:text-white">
                     <h2 className="text-7xl font-bold uppercase">Find a <span className="text-[#4E7661]">Store</span></h2>
                     <p className="mt-10">A cosmetic brand product store, whether it's a physical brick-and-mortar shop or an online e-commerce platform, is a retail destination that specializes in offering a wide range of <strong>beauty</strong> and skincare products from a particular brand or a selection of brands. </p>
                     <div className="mt-5">
