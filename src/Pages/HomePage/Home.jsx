@@ -15,15 +15,15 @@ const Home = () => {
     }, [])
     console.log(brandCardData);
     return (
-        <div>
+        <div className="text-white dark:bg-black">
             <Banner></Banner>
             <About></About>
             {/* brand section */}
             <div className="text-center w-4/5 mx-auto text-black mt-52">
-                <h2 className="text-7xl font-bold uppercase text-center my-4 text-black mt-20">
+                <h2 className="text-7xl font-bold uppercase text-center my-4 text-black mt-20 dark:text-white">
                     Our <span className="text-[#4E7661]">Brand</span>
                 </h2>
-                <p className="text-lg font-normal mb-20">
+                <p className="text-lg font-normal mb-20 dark:text-white">
                     Welcome to our <strong>Beauty Shop</strong>, your one-stop destination
                     for all your cosmetic needs. At <strong>Beauty Shop</strong>, we
                     understand that beauty is not just skin deep; it's about confidence
@@ -40,13 +40,13 @@ const Home = () => {
             <div className="hero bg-base-200 mb-20">
                 <div className="hero-content md:flex flex-col text-center lg:flex-row lg:justify-between lg:text-left">
                     <div>
-                        <p className="text-lg font-medium">New Collection</p>
-                        <h1 className="text-5xl font-bold uppercase mt-5">
+                        <p className="text-lg text-black font-medium">New Collection</p>
+                        <h1 className="text-5xl text-black font-bold uppercase mt-5">
                             Discover Our
                             <br /> Autumn <br />
                             <span className="text-[#4E7661]">Skincare </span>
                         </h1>
-                        <p className="mt-5 text-lg font-normal">
+                        <p className="mt-5 text-black text-lg font-normal">
                             Made using clean, non-toxic ingredients, our products are designed
                             for everyone.
                         </p>
@@ -55,7 +55,7 @@ const Home = () => {
                         </button>
                     </div>
                     <div >
-                        <img className="-mb-4" src="../../../public/image/other-section.png" alt="" />
+                        <img className="-mb-4" src="https://i.ibb.co/YZF2qJP/other-section.png" alt="" />
                     </div>
                 </div>
             </div>

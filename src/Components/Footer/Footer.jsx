@@ -4,7 +4,7 @@ import { FaFacebookF, FaYoutube, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-center p-10 bg-white text-base-content rounded shadow-2xl">
+      <footer className="footer footer-center dark:bg-black dark:text-white p-10 bg-white text-base-content rounded shadow-2xl">
         <div>
           <Link to="/">
             <img
@@ -32,24 +32,24 @@ const Footer = () => {
           <div className="grid grid-flow-col gap-4 text-black text-2xl">
             <Link to="https://www.facebook.com/">
               {" "}
-              <span className="hover:text-[#4e7661]">
+              <span className="hover:text-[#4e7661] dark:text-white">
                 <FaFacebookF></FaFacebookF>
               </span>
             </Link>
             <Link to="https://youtube.com/">
-              <span className="hover:text-[#4e7661]">
+              <span className="hover:text-[#4e7661] dark:text-white">
                 <FaYoutube></FaYoutube>
               </span>
             </Link>
             <Link to="https://twitter.com/">
-              <span className="hover:text-[#4e7661]">
+              <span className="hover:text-[#4e7661] dark:text-white">
                 <FaTwitter></FaTwitter>
               </span>
             </Link>
           </div>
         </nav>
         <aside className="text-sm text-black font-bold">
-          <p>
+          <p className="dark:text-white">
             Copyright © 2023 - All right reserved by{" "}
             <Link className="text-[#4e7661] " to="/">
               Beauty Shop
