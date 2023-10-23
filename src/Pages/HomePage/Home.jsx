@@ -31,7 +31,7 @@ const Home = () => {
                     skincare products will help you look and feel your best, every day.
                 </p>
             </div>
-            <div className="grid gap-6 grid-cols-1 w-4/5 mx-auto mb-44 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-6 grid-cols-1 max-w-[90vw] md:w-4/5 mx-auto mb-44 md:grid-cols-2 lg:grid-cols-3">
                 {allBrandCardData?.map((e) => (
                     <BrandCard key={e.id} e={e}></BrandCard>
                 ))}
@@ -40,7 +40,7 @@ const Home = () => {
             <div className="hero bg-base-200 mb-20">
                 <div className="hero-content md:flex flex-col text-center lg:flex-row lg:justify-between lg:text-left">
                     <div>
-                        <p className="text-lg text-black font-medium">New Collection</p>
+                        <p className="text-lg text-black font-medium mt-5 lg:mt-0">New Collection</p>
                         <h1 className="text-5xl text-black font-bold uppercase mt-5">
                             Discover Our
                             <br /> Autumn <br />
