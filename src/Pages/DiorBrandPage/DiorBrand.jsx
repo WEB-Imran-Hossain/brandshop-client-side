@@ -7,8 +7,8 @@ const DiorBrand = () => {
     const product = useLoaderData();
     console.log(product, "dior");
     return (
-        <div className="md:max-w-[80vw] md:mx-auto">
-            <div className="carousel w-full h-screen mt-20">
+        <div className="md:max-w-[100vw] lg:max-w-[80vw] mx-auto">
+            <div className="carousel w-full h-screen lg:mt-20">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src="https://i.ibb.co/t8V3B4h/Dior-slider-16.jpg" className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
