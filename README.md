@@ -1,3 +1,6 @@
+# About
+The website was created by Drishti Nandan Design to enhance the online presence of Brandshop Cosmetic brand. User can add and subtract products as per their choice by logging in. Product prices can be increased and decreased. Two themes are used in the website.
+
 # Features of Beauty Shop Project
 
 - The Beauty Shop project is created in collaboration with 6 famous brands.
@@ -7,4 +10,4 @@
 - Each product has two buttons. To update and delete information. Also, if you click on the cart button, you can see it on the cart page. You can also delete it if you want.
 - All data of Beauty Shop project is connected to MongoDB server.
 
-website link: https://jade-khapse-103c61.netlify.app/
+# Live Link: https://jade-khapse-103c61.netlify.app/
