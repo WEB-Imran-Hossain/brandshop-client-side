@@ -10,4 +10,4 @@ The website was created by Drishti Nandan Design to enhance the online presence 
 - Each product has two buttons. To update and delete information. Also, if you click on the cart button, you can see it on the cart page. You can also delete it if you want.
 - All data of Beauty Shop project is connected to MongoDB server.
 
-# Live Link: 
+# Live Link: https://brand-beauty-shop.netlify.app/
